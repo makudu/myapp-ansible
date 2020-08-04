@@ -3,12 +3,6 @@
 192.168.56.4
 
 
-#Kubernetes
-192.42.42.100   kmaster.example.com	kmaster	
-192.42.42.10    kworker.example.com	kworker	
-192.42.42.11    kworker02.example.com 	kworker02	
-192.42.42.15    kstorage.example.com	kstorage
-
 [ubuntu]
 node2.example.com 
 node3.example.com 

@@ -1,0 +1,19 @@
+---
+- name: Removing unsed dependencies
+- hosts: node2.example.com
+  tasks:
+  - name: Removing apt dependencies
+    apt:
+      autoremove: yes
+      purge: yes
+
+  - name: collecting list of apt-cache
+    find:
+      paths: "{{ apt_cache }}"
+      patterns: "*.deb"
+    register: files_to_delete
+
+  - name: These files are getting deleted
+    debug:
+      var: {{ files_to_delete }}  
+...

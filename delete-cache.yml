@@ -1,6 +1,8 @@
 ---
 - name: Removing unsed dependencies
   hosts: node2.example.com
+  vars:
+   - apt_cache: /var/cache/apt/archievs/
   become: yes
   tasks:
   - name: Removing apt dependencies

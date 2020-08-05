@@ -15,5 +15,5 @@
 
   - name: These files are getting deleted
     debug:
-      var: {{ files_to_delete }}  
+      var: "{{ files_to_delete }}" 
 ...

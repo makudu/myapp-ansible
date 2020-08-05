@@ -1,6 +1,7 @@
 ---
 - name: Removing unsed dependencies
   hosts: node2.example.com
+  become: yes
   tasks:
   - name: Removing apt dependencies
     apt:

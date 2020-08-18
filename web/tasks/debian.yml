@@ -1,0 +1,12 @@
+---
+- name: Install packages
+  yum:
+    name: "apache2"
+    state: "present"
+    notify: 
+    - Start httpd server
+- name: Deploy static website
+  copy:
+    src: index.html
+    dest: /var/www/html/
+

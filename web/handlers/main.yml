@@ -1,2 +1,17 @@
 ---
 # handlers file for web
+
+- name: Start httpd server
+  service:
+    name: httpd
+    state: started
+    enabled: True
+
+- name: Start Apache server
+  service:
+    name: apache2
+    state: started
+    enabled: True
+
+...
+

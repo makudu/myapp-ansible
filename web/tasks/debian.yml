@@ -1,10 +1,10 @@
 ---
 - name: Install packages
   yum:
-    name: "apache2"
-    state: "present"
+    name: apache2
+    state: present
     notify: 
-    - Start httpd server
+    - Start Apache server
 - name: Deploy static website
   copy:
     src: index.html

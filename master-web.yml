@@ -1,0 +1,6 @@
+---
+- name: web role install
+  hosts: ubuntu      
+  roles:
+  - web
+

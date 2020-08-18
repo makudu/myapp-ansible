@@ -4,7 +4,7 @@
     name: "httpd"
     state: "present"
     notify: 
-    - Start Apache server
+    - Start httpd server
 - name: Deploy static website
   copy:
     src: index.html

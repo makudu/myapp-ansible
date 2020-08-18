@@ -1,4 +1,4 @@
-i---
+---
 ansible_user: vagrant
 ansible_password: vagrant
 ansible_connection: ssh

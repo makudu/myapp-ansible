@@ -1,8 +1,8 @@
 ---
 - name: Install packages
   yum:
-    name: "httpd"
-    state: "present"
+    name: httpd
+    state: latest
     notify: 
     - Start httpd server
 - name: Deploy static website

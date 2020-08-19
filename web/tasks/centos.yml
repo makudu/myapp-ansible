@@ -3,8 +3,7 @@
   yum:
     name: httpd
     state: latest
-  notify: 
-    - Start httpd server
+  notify: Start httpd server
 - name: Deploy static website
   copy:
     src: index.html

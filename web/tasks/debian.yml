@@ -2,7 +2,7 @@
 - name: Install packages
   apt:
     name: apache2
-    state: present
+    state: latest
     notify: 'Start Apache server'
 - name: Deploy static website
   copy:

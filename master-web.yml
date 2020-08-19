@@ -1,6 +1,6 @@
 ---
 - name: web role install
-  hosts: ubuntu      
+  hosts: all        
   roles:
   - web
 

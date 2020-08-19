@@ -3,8 +3,7 @@
   yum:
     name: apache2
     state: present
-    notify: 
-    - Start Apache server
+    notify: 'Start Apache server'
 - name: Deploy static website
   copy:
     src: index.html

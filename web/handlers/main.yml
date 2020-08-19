@@ -5,13 +5,13 @@
   service:
     name: httpd
     state: started
-    enabled: True
+    enabled: yes
 
 - name: Start Apache server
   service:
     name: apache2
     state: started
-    enabled: True
+    enabled: yes
 
 ...
 

@@ -3,7 +3,7 @@
   apt:
     name: apache2
     state: latest
-    notify: 'Start Apache server'
+  notify: 'Start Apache server'
 - name: Deploy static website
   copy:
     src: index.html

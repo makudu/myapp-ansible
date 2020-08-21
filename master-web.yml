@@ -1,6 +1,7 @@
 ---
 - name: web role install
   hosts: ubuntu        
+  gather_facts: yes
   roles:
   - web
 

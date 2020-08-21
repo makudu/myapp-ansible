@@ -1,0 +1,28 @@
+---
+- name: Creating simplefile txt file
+  become: yes
+  hosts: localhost
+  tasks:        
+  - name: creating simplefile
+    file:
+      dest: /home/mahesh/simplefile.txt
+      state: touch
+
+  - name: check if file exists under test directory
+    stat:
+      path: /home/mahesh/test/simplefile.txt
+    register: tstpath
+
+  - name: debug message
+    debug:
+      msg: "{{ tstpath.stat.exists }}"
+   
+
+  - name: moving simplefile to /home/mahesh/test
+    command: mv /home/mahesh/simplefile.txt /home/mahesh/test
+    when: tstpath.stat.exists == False 
+    
+...
+      
+
+
